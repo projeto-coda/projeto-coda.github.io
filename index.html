@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>C.O.D.A.</title>
+
+  <style>
+    @font-face {
+      font-family: 'SulphurPoint';
+      src: url('../../../assets/SulphurPoint-Regular.ttf');
+    }
+
+    * {
+      font-family: 'SulphurPoint', sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    @keyframes fade {
+      from { opacity: 0; transform: translateY(-10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .animate-fade {
+      animation: fade 0.3s ease-in-out;
+    }
+  </style>
+
+  <script src="./tailwinds.js"></script>
+</head>
+
+<body class="bg-[#09294a] text-[#eee]">
+
+  <!-- NAVBAR -->
+  <nav class="sticky top-0 z-50 bg-[#09294a]/90 backdrop-blur border-b border-[#3a5a89]">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+      <div class="text-xl font-bold text-[#f4d35e]">
+        C.O.D.A.
+      </div>
+
+      <div class="hidden md:flex gap-6 text-lg">
+        <a href="#objetivo" class="hover:text-[#f4d35e] transition">Missão</a>
+        <a href="#publico" class="hover:text-[#f4d35e] transition">Público</a>
+        <a href="#funcionalidades" class="hover:text-[#f4d35e] transition">Funcionalidades</a>
+        <a href="#futuro" class="hover:text-[#f4d35e] transition">Futuro</a>
+      </div>
+
+      <button id="menuBtn" class="md:hidden text-2xl">☰</button>
+    </div>
+
+    <div id="mobileMenu" class="hidden flex-col px-6 pb-4 md:hidden">
+      <a href="#objetivo" class="py-2 border-b border-[#3a5a89]">Missão</a>
+      <a href="#publico" class="py-2 border-b border-[#3a5a89]">Público</a>
+      <a href="#funcionalidades" class="py-2 border-b border-[#3a5a89]">Funcionalidades</a>
+      <a href="#futuro" class="py-2 border-b border-[#3a5a89]">Futuro</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="bg-gradient-to-b from-[#012040] to-[#09294a] py-20 px-6 text-center">
+
+    <h1 class="text-4xl md:text-6xl font-bold mb-6 text-[#f4d35e] animate-pulse">
+      Você não está sozinho.
+    </h1>
+
+    <p class="text-lg md:text-xl text-[#eee]/80 max-w-2xl mx-auto mb-8">
+      O <strong>C.O.D.A.</strong> oferece apoio imediato para estudantes neurodivergentes em momentos difíceis.
+      Um simples toque pode trazer ajuda quando mais importa.
+    </p>
+
+    <a href="#funcionalidades"
+       class="bg-[#f4d35e] text-[#012040] px-6 py-3 rounded-xl text-lg font-bold hover:scale-105 transition">
+       Ver como funciona
+    </a>
+
+    <div class="flex flex-col md:flex-row items-center justify-center gap-10 mt-14">
+      <img src="LogoCODA.svg" class="h-[40vmin] hover:scale-105 transition duration-500" alt="Logo CODA">
+
+      <div class="text-2xl space-y-2 text-left">
+        <p><span class="text-5xl font-black text-[#f4d35e]">C</span> Conexão</p>
+        <p><span class="text-5xl font-black text-[#f4d35e]">O</span> Observação</p>
+        <p><span class="text-5xl font-black text-[#f4d35e]">D</span> Direcionamento</p>
+        <p><span class="text-5xl font-black text-[#f4d35e]">A</span> Apoio</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- MAIN -->
+  <main class="max-w-6xl mx-auto px-6 py-10 space-y-10">
+
+    <!-- MISSÃO -->
+    <section id="objetivo" class="bg-[#012040] rounded-2xl p-6 shadow-lg border border-[#3a5a89] hover:scale-[1.01] transition">
+      <h2 class="text-2xl font-bold text-[#f4d35e] mb-4">Nossa Missão</h2>
+      <p class="text-lg leading-relaxed">
+        Momentos de crise podem surgir sem aviso. O <strong>C.O.D.A.</strong> existe para garantir que ninguém enfrente isso sozinho,
+        oferecendo suporte rápido, discreto e eficiente dentro do ambiente escolar.
+      </p>
+    </section>
+
+    <!-- PÚBLICO -->
+    <section id="publico" class="bg-[#012040] rounded-2xl p-6 shadow-lg border border-[#3a5a89] hover:scale-[1.01] transition">
+      <h2 class="text-2xl font-bold text-[#f4d35e] mb-4">Para quem é?</h2>
+      <ul class="list-disc pl-6 text-lg space-y-2">
+        <li>Jovens neurodivergentes (TEA, TDAH, entre outros)</li>
+        <li>Estudantes que precisam de apoio emocional</li>
+        <li>Escolas que desejam mais segurança e inclusão</li>
+      </ul>
+    </section>
+
+    <!-- FUNCIONALIDADES -->
+    <section id="funcionalidades" class="bg-[#012040] rounded-2xl p-6 shadow-lg border border-[#3a5a89]">
+      <h2 class="text-2xl font-bold text-[#f4d35e] mb-4">Funcionalidades</h2>
+
+      <div class="grid md:grid-cols-2 gap-4 text-lg">
+        <div class="bg-[#09294a] p-4 rounded-xl hover:scale-105 transition">🚨 Botão de emergência</div>
+        <div class="bg-[#09294a] p-4 rounded-xl hover:scale-105 transition">📢 Alertas automáticos</div>
+        <div class="bg-[#09294a] p-4 rounded-xl hover:scale-105 transition">📊 Histórico de crises</div>
+        <div class="bg-[#09294a] p-4 rounded-xl hover:scale-105 transition">⏰ Controle de rotina</div>
+        <div class="bg-[#09294a] p-4 rounded-xl hover:scale-105 transition">📄 Relatórios</div>
+      </div>
+    </section>
+
+    <!-- FUTURO -->
+    <section id="futuro" class="bg-[#012040] rounded-2xl p-6 shadow-lg border border-[#3a5a89]">
+      <h2 class="text-2xl font-bold text-[#f4d35e] mb-4">O que vem por aí</h2>
+      <ul class="list-disc pl-6 text-lg space-y-2">
+        <li>Botão direto na tela de bloqueio</li>
+        <li>Mapa de ocorrências em tempo real</li>
+        <li>Integração com responsáveis</li>
+      </ul>
+    </section>
+
+    <!-- CTA -->
+    <section id="contato" class="text-center flex flex-col justify-center align-center"> <h2 class="text-2xl font-bold text-[#f4d35e] mb-4">Acompanhe</h2> <a href="" class="flex text-xl text-[#f4d35e] text-center justify-center"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>&emsp;@TCC_CODA</a> </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-center py-6 text-sm text-[#eee]/70">
+    © 2026 C.O.D.A.
+  </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    const btn = document.getElementById('menuBtn');
+    const menu = document.getElementById('mobileMenu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('animate-fade');
+    });
+  </script>
+
+</body>
+</html>
