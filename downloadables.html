@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Materiais | C.O.D.A.</title>
+
+  <script src="./tailwinds.js"></script>
+  <link rel="icon" href="/LogoCODA.svg" type="image/svg+xml">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .card {
+      transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+    }
+
+
+    .download-btn {
+      transition: all 0.2s ease;
+    }
+
+  </style>
+
+</head>
+
+<body class="bg-[#071f38] text-white min-h-screen">
+
+  <!-- HEADER -->
+
+  <header class="border-b border-white/10 bg-[#061b30]/80 backdrop-blur-md">
+
+
+<div class="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
+
+  <div>
+    <span class="text-sm font-semibold tracking-widest uppercase text-[#f4d35e]">
+      C.O.D.A
+    </span>
+  </div>
+
+  <a
+    href="/"
+    class="text-sm text-gray-300 hover:text-white transition"
+  >
+    Página Inicial
+  </a>
+
+</div>
+
+
+  </header>
+
+  <!-- HERO -->
+
+  <main>
+
+
+
+
+<!-- MATERIAIS -->
+<section id="materiais" class="px-6 py-24">
+
+  <div class="max-w-6xl mx-auto">
+
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-10">
+
+      <div>
+
+        <h2 class="text-3xl font-bold">
+          Materiais do projeto
+        </h2>
+      </div>
+
+
+    </div>
+
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+
+      <!-- SLIDES -->
+      <article class="card border border-white/10 rounded-2xl p-6">
+
+        <div class="flex items-start justify-between mb-8">
+
+          <div class="w-11 h-11 rounded-xl bg-white/5 flex items-center justify-center">
+            <svg
+              class="w-5 h-5 text-[#f4d35e]"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <rect x="3" y="4" width="18" height="16" rx="2"/>
+              <path d="M8 8h8M8 12h5"/>
+            </svg>
+          </div>
+
+          <span class="text-xs text-gray-500">
+            PDF
+          </span>
+
+        </div>
+
+        <h3 class="text-xl font-semibold mb-2">
+          Slides
+        </h3>
+
+        <p class="text-sm text-gray-400 leading-relaxed mb-6">
+          Apresentação utilizada para apresentar o projeto,
+          seus objetivos, funcionalidades e solução.
+        </p>
+
+        <a
+          href="arquivos/slides.pdf"
+          download
+          class="download-btn flex items-center justify-between w-full
+                 bg-[#f4d35e] text-[#071f38] font-semibold
+                 px-4 py-3 rounded-xl"
+        >
+          <span>Baixar arquivo</span>
+
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 4v12m0 0 4-4m-4 4-4-4M5 20h14"
+            />
+          </svg>
+        </a>
+
+      </article>
+
+
+      <!-- MONOGRAFIA -->
+      <article class="card border border-white/10 rounded-2xl p-6">
+
+        <div class="flex items-start justify-between mb-8">
+
+          <div class="w-11 h-11 rounded-xl bg-white/5 flex items-center justify-center">
+            <svg
+              class="w-5 h-5 text-[#f4d35e]"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.8"
+                d="M6 4h12a2 2 0 0 1 2 2v14H8a2 2 0 0 1-2-2V4Z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-width="1.8"
+                d="M8 4v14M11 8h6M11 12h6"
+              />
+            </svg>
+          </div>
+
+          <span class="text-xs text-gray-500">
+            PDF
+          </span>
+
+        </div>
+
+        <h3 class="text-xl font-semibold mb-2">
+          Monografia
+        </h3>
+
+        <p class="text-sm text-gray-400 leading-relaxed mb-6">
+          Documento acadêmico completo com pesquisa,
+          metodologia, desenvolvimento e resultados.
+        </p>
+
+        <a
+          href="arquivos/monografia.pdf"
+          download
+          class="download-btn flex items-center justify-between w-full
+                 bg-[#f4d35e] text-[#071f38] font-semibold
+                 px-4 py-3 rounded-xl"
+        >
+          <span>Baixar arquivo</span>
+
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 4v12m0 0 4-4m-4 4-4-4M5 20h14"
+            />
+          </svg>
+        </a>
+
+      </article>
+
+
+      <!-- BANNER -->
+      <article class="card border border-white/10 rounded-2xl p-6">
+
+        <div class="flex items-start justify-between mb-8">
+
+          <div class="w-11 h-11 rounded-xl bg-white/5 flex items-center justify-center">
+            <svg
+              class="w-5 h-5 text-[#f4d35e]"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <rect
+                x="3"
+                y="5"
+                width="18"
+                height="14"
+                rx="2"
+              />
+              <circle cx="8.5" cy="10" r="1.5"/>
+              <path d="m21 15-5-5L5 19"/>
+            </svg>
+          </div>
+
+          <span class="text-xs text-gray-500">
+            PDF
+          </span>
+
+        </div>
+
+        <h3 class="text-xl font-semibold mb-2">
+          Banner
+        </h3>
+
+        <p class="text-sm text-gray-400 leading-relaxed mb-6">
+          Material visual oficial desenvolvido para
+          apresentações, eventos e exposições.
+        </p>
+
+        <a
+          href="arquivos/banner.pdf"
+          download
+          class="download-btn flex items-center justify-between w-full
+                 bg-[#f4d35e] text-[#071f38] font-semibold
+                 px-4 py-3 rounded-xl"
+        >
+          <span>Baixar arquivo</span>
+
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 4v12m0 0 4-4m-4 4-4-4M5 20h14"
+            />
+          </svg>
+        </a>
+
+      </article>
+
+
+      <!-- VIDEOPITCH -->
+      <article class="card border border-white/10 rounded-2xl p-6">
+
+        <div class="flex items-start justify-between mb-8">
+
+          <div class="w-11 h-11 rounded-xl bg-white/5 flex items-center justify-center">
+            <svg
+              class="w-5 h-5 text-[#f4d35e]"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <rect
+                x="3"
+                y="5"
+                width="18"
+                height="14"
+                rx="2"
+              />
+              <path d="m10 9 5 3-5 3V9Z"/>
+            </svg>
+          </div>
+
+          <span class="text-xs text-gray-500">
+            MP4
+          </span>
+
+        </div>
+
+        <h3 class="text-xl font-semibold mb-2">
+          Videopitch
+        </h3>
+
+        <p class="text-sm text-gray-400 leading-relaxed mb-6">
+          Apresentação em vídeo com uma visão rápida
+          sobre o problema, proposta e solução.
+        </p>
+
+        <a
+          href="arquivos/videopitch.mp4"
+          download
+          class="download-btn flex items-center justify-between w-full
+                 bg-[#f4d35e] text-[#071f38] font-semibold
+                 px-4 py-3 rounded-xl"
+        >
+          <span>Baixar vídeo</span>
+
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 4v12m0 0 4-4m-4 4-4-4M5 20h14"
+            />
+          </svg>
+        </a>
+
+      </article>
+
+
+      <!-- VÍDEO DO PRODUTO -->
+      <article class="card border border-white/10 rounded-2xl p-6">
+
+        <div class="flex items-start justify-between mb-8">
+
+          <div class="w-11 h-11 rounded-xl bg-white/5 flex items-center justify-center">
+            <svg
+              class="w-5 h-5 text-[#f4d35e]"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+            >
+              <rect
+                x="3"
+                y="5"
+                width="18"
+                height="14"
+                rx="2"
+              />
+              <path d="m10 9 5 3-5 3V9Z"/>
+            </svg>
+          </div>
+
+          <span class="text-xs text-gray-500">
+            MP4
+          </span>
+
+        </div>
+
+        <h3 class="text-xl font-semibold mb-2">
+          Vídeo do produto
+        </h3>
+
+        <p class="text-sm text-gray-400 leading-relaxed mb-6">
+          Demonstração do produto em funcionamento
+          e de suas principais funcionalidades.
+        </p>
+
+        <a
+          href="arquivos/video-produto.mp4"
+          download
+          class="download-btn flex items-center justify-between w-full
+                 bg-[#f4d35e] text-[#071f38] font-semibold
+                 px-4 py-3 rounded-xl"
+        >
+          <span>Baixar vídeo</span>
+
+          <svg
+            class="w-4 h-4"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M12 4v12m0 0 4-4m-4 4-4-4M5 20h14"
+            />
+          </svg>
+        </a>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <footer class="border-t border-white/10">
+
+
+<div class="max-w-6xl mx-auto px-6 py-8 flex flex-col md:flex-row justify-between gap-3">
+
+  <p class="text-sm text-gray-500">
+      © 2026 C.O.D.A.
+  </p>
+
+
+</div>
+
+
+  </footer>
+
+</body>
+</html>
